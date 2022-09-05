@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/6ff9545e10.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css\brutal.css">
+    <link rel="stylesheet" href="css\port.css">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js\brutal.js"></script>
+    <script src="js\tool.js"></script>
+
+    
+    <title>Datacenter</title>
+</head>
+<body>
+    <main class="cotainer-fluid d-flex">
+        <div id="particles"></div>
+        
+        <div class="section row d-flex flex-grow-1">
+            
+                <div class="proxysection col-md-8 col-lg-md-6 p-0 d-flex flex-column">
+                    <nav class="navbar navbar-expand-lg navbar-light align-items-start mt-3">
+                        <a class="navbar-brand mr-5 ml-3" href="https://brutalproxies.com/" target="_blank"><img class="logo" src="image\logo.svg" alt="logo"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                            <a class="nav-link mx-3" href="#"><p class="menu active m-0">Datacenter</p><span class="sr-only">(current)</span></a>
+                            <a class="nav-link mx-3" href="#"><p class="menu m-0">Admin Panel</p></a>
+                            <a class="nav-link mx-3" href="#"><p class="menu m-0">User Accounts</p></a>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="proxy p-0 d-flex flex-column flex-grow-1 justify-content-center">
+                            <div class="proxyinfo d-flex flex-row">
+                                <div class="ip table-wrapper-scroll-y scrollbar-light-blue mx-4 mt-4">
+                                     <div class="sleep d-flex align-items-center justify-content-center flex-row pb-5">
+                                        <img class="night"src="image\lion.svg" alt="sleep">
+                                        <p class="name ml-4 mb-0">Get Started<br><span>Purchase Some Plans</span></p>
+                                    </div>
+                                </div>
+                                <div class="counter d-flex mt-4 mr-4 flex-column justify-content-between">
+                                    <div class="amount d-flex justify-content-center align-items-center">
+                                        <div class="ips d-flex align-items-center">
+                                            <div class="icon d-flex justify-content-center align-items-center"><i class="fas fa-bolt"></i></div>
+                                            <div class="d-flex flex-column align-items-start justify-content-between ml-4">
+                                                <p class="name m-0"># Proxy</p>
+                                                <p class="count m-0">1256</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="time d-flex justify-content-center align-items-center">
+                                        <div id="chart"></div>
+                                    </div>
+                                    <!-- <div class="copy d-flex flex-row justify-content-between">
+                                        <button type="button" class="copy btn"><i class="export fas fa-clone"></i></button>
+                                        <button type="button" class="copy btn ml-4"><i class="export fas fa-chevron-circle-down"></i></button>
+                                    </div> -->
+                                </div>
+                            </div>
+
+
+                            <div class="proxyplan p-4" id="eu">
+
+                                <div class="plan position-relative d-flex flex-column justify-content-between">
+                                    <div class="info d-flex justify-content-between align-items-center m-3">
+                                        <p class="type m-0">EU Daily <span>active</span></p>
+                                        <div class="c-dropdown js-dropdown">
+                                            <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                            <span class="c-button c-button--dropdown js-dropdown__current">25</span>
+                                            <ul class="c-dropdown__list">
+                                                <li class="c-dropdown__item" data-dropdown-value="angular">25</li>
+                                                <li class="c-dropdown__item" data-dropdown-value="backbone">50</li>
+                                                <li class="c-dropdown__item" data-dropdown-value="ember">100</li>
+                                                    
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="purchase btn m-3 ml-auto py-1"><i class="export fas fa-shopping-cart"></i></button>
+                                    <img class="planlogo position-absolute"src="image\planlogo.svg" alt="plan">
+                                    <img class="planregion position-absolute"src="image\europe.svg" alt="plan">
+                                </div>
+
+                                <div class="plan position-relative mx-4 d-flex flex-column justify-content-between">
+                                    <div class="info d-flex justify-content-between align-items-center m-3">
+                                        <p class="type m-0">EU Monthly</p>
+                                        <div class="c-dropdown js-dropdown">
+                                            <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                            <span class="c-button c-button--dropdown js-dropdown__current">25</span>
+                                            <ul class="c-dropdown__list">
+                                                <li class="c-dropdown__item" data-dropdown-value="angular">25</li>
+                                                <li class="c-dropdown__item" data-dropdown-value="backbone">50</li>
+                                                <li class="c-dropdown__item" data-dropdown-value="ember">100</li>
+                                                    
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="purchase btn m-3 ml-auto py-1"><i class="export fas fa-shopping-cart"></i></button>
+                                    <img class="planlogo position-absolute"src="image\planlogo.svg" alt="plan">
+                                    <img class="planregion position-absolute"src="image\europe.svg" alt="plan">
+                                </div>
+
+                                <div class="plan position-relative d-flex flex-column justify-content-between">
+                                    <div class="info d-flex justify-content-between align-items-center m-3">
+                                        <p class="type m-0">US Plans</p>
+                                    </div>
+                                    <button type="button" onclick="href='#us'" class="view-us btn m-3 ml-auto py-1"><p class="name m-0">View</p></button>
+                                    <img class="planlogo position-absolute"src="image\planlogo.svg" alt="plan">
+                                    <img class="planregion-us position-absolute"src="image\northamerica.svg" alt="plan">
+                                </div>
+
+                            </div>
+                            <!-- us -->
+                            <div class="proxyplan p-4" id="us">
+
+                                <div class="plan position-relative d-flex flex-column justify-content-between">
+                                    <div class="info d-flex justify-content-between align-items-center m-3">
+                                        <p class="type m-0">US Daily</p>
+                                        <div class="c-dropdown js-dropdown">
+                                            <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                            <span class="c-button c-button--dropdown js-dropdown__current">25</span>
+                                            <ul class="c-dropdown__list">
+                                                <li class="c-dropdown__item" data-dropdown-value="angular">25</li>
+                                                <li class="c-dropdown__item" data-dropdown-value="backbone">50</li>
+                                                <li class="c-dropdown__item" data-dropdown-value="ember">100</li>
+                                                    
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="purchase btn m-3 ml-auto py-1"><i class="export fas fa-shopping-cart"></i></button>
+                                    <img class="planlogo position-absolute"src="image\planlogo.svg" alt="plan">
+                                    <img class="planregion-us position-absolute"src="image\northamerica.svg" alt="plan">
+                                </div>
+
+                                <div class="plan position-relative mx-4 d-flex flex-column justify-content-between">
+                                    <div class="info d-flex justify-content-between align-items-center m-3">
+                                        <p class="type m-0">US Monthly <span>active</span></p>
+                                        <div class="c-dropdown js-dropdown">
+                                            <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                            <span class="c-button c-button--dropdown js-dropdown__current">25</span>
+                                            <ul class="c-dropdown__list">
+                                                <li class="c-dropdown__item" data-dropdown-value="angular">25</li>
+                                                <li class="c-dropdown__item" data-dropdown-value="backbone">50</li>
+                                                <li class="c-dropdown__item" data-dropdown-value="ember">100</li>
+                                                    
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="purchase btn m-3 ml-auto py-1"><i class="export fas fa-shopping-cart"></i></button>
+                                    <img class="planlogo position-absolute"src="image\planlogo.svg" alt="plan">
+                                    <img class="planregion-us position-absolute"src="image\northamerica.svg" alt="plan">
+                                </div>
+
+                                <div class="plan position-relative d-flex flex-column justify-content-between">
+                                    <div class="info d-flex justify-content-between align-items-center m-3">
+                                        <p class="type m-0">EU Plans</p>
+                                    </div>
+                                    <button type="button" onclick="href='#eu'" class="view-eu btn m-3 ml-auto py-1"><p class="name m-0">View</p></button>
+                                    <img class="planlogo position-absolute"src="image\planlogo.svg" alt="plan">
+                                    <img class="planregion position-absolute"src="image\europe.svg" alt="plan">
+                                </div>
+
+                            </div>
+
+
+                    </div>
+                </div>
+                <div class="calendarsection col-md-4 p-0 d-flex flex-column justify-content-center">
+                    
+                    <nav class="usersection navbar navbar-expand-lg navbar-light align-items-start mt-3">
+                        <a class="navbar-brand mr-5 ml-3 mt-2" href="#"><i class="logout fas fa-sign-out-alt"></i></a>
+                    
+                        <div class="userinfo ml-auto d-flex flex-row">
+                            <div class="user d-flex flex-column align-items-end justify-content-center">
+                                <p class="name m-0">Foxydraft</p>
+                                <p class="usertype m-0">admin</p>
+                            </div>
+                            <a class="navbar-brand ml-4 mr-3" href="#"><img class="profile logo" src="image\foxtasycraft.png" alt="profile"></a>
+                        </div>
+                    </nav>
+
+                    <div class="release d-flex flex-column flex-grow-1">
+                        <div class="calendar m-4 d-flex justify-content-center">
+                            <ul class="nav">
+                                <li class="day">S</li>
+                                <li class="day">M</li>
+                                <li class="day">T</li>
+                                <li class="day">W</li>
+                                <li class="day">T</li>
+                                <li class="day">F</li>
+                                <li class="day">S</li>
+                                <li class="number">1</li>
+                                <li class="number">2</li>
+                                <li class="number">3</li>
+                                <li class="number"><a class="active" data-toggle="pill" href="#number-4">4</a></li>
+                                <li class="number"><a data-toggle="pill" href="#number-5">5</a></li>
+                                <li class="number">6</li>
+                                <li class="number">7</li>
+                                <li class="number">8</li>
+                                <li class="number">9</li>
+                                <li class="number">10</li>
+                                <li class="number">11</li>
+                                <li class="number">12</li>
+                                <li class="number">13</li>
+                                <li class="number">14</li>
+                                <li class="number">15</li>
+                                <li class="number">16</li>
+                                <li class="number">17</li>
+                                <li class="number">18</li>
+                                <li class="number">19</li>
+                                <li class="number">20</li>
+                                <li class="number">21</li>
+                                <li class="number">22</li>
+                                <li class="number">23</li>
+                                <li class="number">24</li>
+                                <li class="number">25</li>
+                                <li class="number">26</li>
+                                <li class="number">27</li>
+                                <li class="number">28</li>
+                                <li class="number">29</li>
+                                <li class="number">30</li>
+                                <li class="number">31</li>
+                                <li class="month ml-auto d-flex align-items-center justify-content-center"><div class="cal d-flex align-items-center justify-content-center"><p class="date m-0">July</p></div></li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="release-content tab-content d-flex flex-grow-1 scrollbar-light-blue"> 
+                            <div class="release-section tab-pane fade show active" id="number-4">
+                            
+                                    <ul class="calendar-list list-unstyled">
+                                        <li class="row no-gutters py-3 m-0 mx-2 align-items-center">
+                                            <div class="thumbnail ml-3"><img class="item" src="image\fearless.jpg" alt="items"></div>
+                                            <div class="col-6 col-md-6 ml-3"> <p class="productname">Air Jordan 1 Mid Fearless</p><p class="name m-0">150 USD</p></div>
+                                            <div class="col-2 col-md-2 ml-auto mr-3"><div class="hype d-flex justify-content-center align-items-center"><i class="fire fas fa-fire"></i></div></div>
+                                        </li>
+                                        <li class="row no-gutters py-3 m-0 mx-2 align-items-center">
+                                            <div class="thumbnail ml-3"><img class="item" src="image\nike low ceramic.jpg" alt="items"></div>
+                                            <div class="col-6 col-md-6 ml-3"> <p class="productname">Nike Dunk Low Ceramic</p><p class="name m-0">100 USD</p></div>
+                                            <div class="col-2 col-md-2 ml-auto mr-3"><div class="hype d-flex justify-content-center align-items-center"><i class="fire fas fa-fire"></i></div></div>
+                                        </li>
+                                        <li class="row no-gutters py-3 m-0 mx-2 align-items-center">
+                                            <div class="thumbnail ml-3"><img class="item" src="https://stockx.imgix.net/products/streetwear/Kith-Classic-Logo-Hoodie-Black.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1603481985" alt="items"></div>
+                                            <div class="col-6 col-md-6 ml-3"> <p class="productname">Kith Bogo Hoodie</p><p class="name m-0">200 USD</p></div>
+                                            <div class="col-2 col-md-2 ml-auto mr-3"><div class="mid d-flex justify-content-center align-items-center"><p class="name m-0">mid</p></div></div>
+                                        </li>
+                                        <li class="row no-gutters py-3 m-0 mx-2 align-items-center">
+                                            <div class="thumbnail ml-3"><img class="item" src="https://stockx.imgix.net/images/Adidas-Yeezy-Boost-350-V2-Zebra-Product-1.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1606321670" alt="items"></div>
+                                            <div class="col-6 col-md-6 ml-3"> <p class="productname">Yeezy 350 V2 Zebra</p><p class="name m-0">220 USD</p></div>
+                                            <div class="col-2 col-md-2 ml-auto mr-3"><div class="low d-flex justify-content-center align-items-center"><p class="name m-0">low</p></div></div>
+                                        </li>
+                                    </ul>
+
+                            </div>
+                            <div class="release-section tab-pane fade" id="number-5">
+                            
+                                    <div class="sleep d-flex align-items-center justify-content-center flex-row pb-5">
+                                        <img class="night"src="image\night.svg" alt="sleep">
+                                        <p class="name ml-4 mb-0">Sleep<br><span>Nothing Drops</span></p>
+                                    </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+        </div>
+    </main>
+    <script>
+        var options = {
+          series: [55],
+          chart: {
+          height: 220,
+          type: 'radialBar',
+          toolbar: {
+            show: false
+          }
+        },
+
+        plotOptions: {
+          radialBar: {
+            startAngle: -135,
+            endAngle: 225,
+             hollow: {
+              margin: 0,
+              size: '70%',
+              background: '#47567D',
+              image: undefined,
+              imageOffsetX: 0,
+              imageOffsetY: 0,
+              position: 'front',
+              dropShadow: {
+                enabled: true,
+                top: 3,
+                left: 0,
+                blur: 16,
+                opacity: 0.14
+              }
+            },
+
+            track: {
+              background: '#29354B',
+              strokeWidth: '67%',
+              margin: 2, // margin is in pixels
+              dropShadow: {
+                enabled: true,
+                top: -3,
+                left: 0,
+                blur: 16,
+                opacity: 0.15
+              }
+            },
+        
+            dataLabels: {
+              show: true,
+              name: {
+                offsetY: -10,
+                show: true,
+                color: '#97A4C6',
+                fontSize: '15px'
+              },
+
+              value: {
+                formatter: function(val) {
+                  return parseInt(val);
+                },
+                color: '#BDCBFF',
+                fontSize: '30px',
+                show: true,
+              }
+            }
+          }
+        },
+
+        fill: {
+          type: 'gradient',
+          gradient: {
+            shade: 'dark',
+            type: 'horizontal',
+            shadeIntensity: 0.5,
+            gradientToColors: ['#7AF3A6'],
+            inverseColors: true,
+            opacityFrom: 1,
+            opacityTo: 1,
+            stops: [0, 100]
+          }
+        },
+
+        stroke: {
+          lineCap: 'round'
+        },
+        
+        labels: ['Days Left'],
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('#us').hide();
+            $(".view-us").on('click', function() {
+                $('#eu').hide();
+                $('#us').fadeIn("slow");
+                $('#us').css('display',"flex");
+            });
+
+            $(".view-eu").on('click', function() {
+                $('#us').hide();
+                $('#eu').fadeIn("slow");
+            });
+        });
+    </script>
+
+</body>
+</html>

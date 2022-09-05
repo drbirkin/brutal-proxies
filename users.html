@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/6ff9545e10.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css\user.css">
+    <link rel="stylesheet" href="css\port.css">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js\brutal.js"></script>
+    <script src="js\tool.js"></script>
+
+
+    <title>Datacenter</title>
+</head>
+<body>
+    <main class="cotainer-fluid d-flex">
+        <div id="particles"></div>
+
+        <div class="section row d-flex flex-grow-1">
+
+                <div class="proxysection col-md-8 col-lg-md-6 p-0 d-flex flex-column">
+                    <nav class="navbar navbar-expand-lg navbar-light align-items-start mt-3">
+                        <a class="navbar-brand mr-5 ml-3" href="https://brutalproxies.com/" target="_blank"><img class="logo" src="image\logo.svg" alt="logo"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                            <a class="nav-link mx-3" href="/"><p class="menu m-0">Datacenter</p><span class="sr-only">(current)</span></a>
+                            <a class="nav-link mx-3" href="admin.html"><p class="menu m-0">Admin Panel</p></a>
+                            <a class="nav-link mx-3" href="users.html"><p class="menu active m-0">User Accounts</p></a>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="proxy p-0 d-flex flex-column flex-grow-1 justify-content-center">
+                            <div class="ipinfo d-flex flex-row p-4">
+                                <div class="ip table-wrapper-scroll-y scrollbar-light-blue mr-4">
+                                    <ul class="table list-unstyled m-0">
+                                            <li class="row no-gutters mb-3 m-0 align-items-center">
+                                                    <div class="bar"></div>
+                                                    <div class="pl ml-3 d-flex justify-content-center align-items-center"><p class="name m-0 d-inline">Daily</p></div>
+                                                    <div class="subnet ml-5"><p class="name m-0">154.xx</p></div>
+                                                    <div class="subnet ml-5"><p class="name m-0">EU</p></div>
+                                                    <div class="status ml-auto d-flex justify-content-start align-items-center"><div></div><p class="name m-0 ml-2">Active</p></div>
+                                                    <div class="subnet mr-4 ml-auto"><i class="view fas fa-bars"></i><i class="delete ml-4 fas fa-trash-alt"></i></div>
+                                            </li>
+
+                                            <li class="row no-gutters mb-3 m-0 align-items-center">
+                                                    <div class="bar-expired"></div>
+                                                    <div class="pl ml-3 d-flex justify-content-center align-items-center"><p class="name m-0 d-inline">Daily</p></div>
+                                                    <div class="subnet ml-5"><p class="name m-0">83.xx</p></div>
+                                                    <div class="subnet ml-5"><p class="name m-0">EU</p></div>
+                                                    <div class="status-expired ml-auto d-flex justify-content-start align-items-center"><div></div><p class="name m-0 ml-2">Expired</p></div>
+                                                    <div class="subnet mr-4 ml-auto"><i class="view fas fa-bars"></i><i class="delete ml-4 fas fa-trash-alt"></i></div>
+                                            </li>
+
+                                            <li class="row no-gutters mb-3 m-0 align-items-center">
+                                                    <div class="bar"></div>
+                                                    <div class="pl ml-3 d-flex justify-content-center align-items-center"><p class="name m-0 d-inline">Month</p></div>
+                                                    <div class="subnet ml-5"><p class="name m-0">124.xx</p></div>
+                                                    <div class="subnet ml-5"><p class="name m-0">US</p></div>
+                                                    <div class="status ml-auto d-flex justify-content-start align-items-center"><div></div><p class="name m-0 ml-2">Active</p></div>
+                                                    <div class="subnet mr-4 ml-auto"><i class="view fas fa-bars"></i><i class="delete ml-4 fas fa-trash-alt"></i></div>
+                                            </li>
+
+                                            <li class="row no-gutters mb-3 m-0 align-items-center">
+                                                    <div class="bar"></div>
+                                                    <div class="pl ml-3 d-flex justify-content-center align-items-center"><p class="name m-0 d-inline">Month</p></div>
+                                                    <div class="subnet ml-5"><p class="name m-0">154.xx</p></div>
+                                                    <div class="subnet ml-5"><p class="name m-0">US</p></div>
+                                                    <div class="status ml-auto d-flex justify-content-start align-items-center"><div></div><p class="name m-0 ml-2">Active</p></div>
+                                                    <div class="subnet mr-4 ml-auto"><i class="view fas fa-bars"></i><i class="delete ml-4 fas fa-trash-alt"></i></div>
+                                            </li>
+
+                                    </ul>
+                                </div>
+                                <div class="counter d-flex flex-column justify-content-between">
+                                    <div class="amount d-flex justify-content-center align-items-center">
+                                        <div class="ips d-flex align-items-center">
+                                            <div class="icon d-flex justify-content-center align-items-center"><i class="fas fa-bolt"></i></div>
+                                            <div class="d-flex flex-column align-items-start justify-content-between ml-4">
+                                                <p class="name m-0"># Proxy</p>
+                                                <p class="count m-0">1256</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="time d-flex justify-content-center align-items-center">
+                                        <div id="chart"></div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="proxyplan px-4 mb-4">
+<!-- eu -->
+                                            <div class="plan position-relative flex-column justify-content-between mr-4" id="eu">
+                                                <div class="info d-flex justify-content-between align-items-center m-3">
+                                                    <div class="c-dropdown js-dropdown">
+                                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                                        <span class="c-button c-button--dropdown js-dropdown__current">Subnet</span>
+                                                        <ul class="c-dropdown__list">
+                                                            <li class="c-dropdown__item" data-dropdown-value="angular">130.195.51</li>
+                                                            <li class="c-dropdown__item" data-dropdown-value="backbone">130.195.51</li>
+                                                            <li class="c-dropdown__item" data-dropdown-value="ember">130.57.567</li>
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="c-dropdown js-dropdown ml-auto mr-3">
+                                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                                        <span class="c-button c-button--dropdown js-dropdown__current">Daily</span>
+                                                        <ul class="c-dropdown__list">
+                                                            <li class="c-dropdown__item" data-dropdown-value="angular">Daily</li>
+                                                            <li class="c-dropdown__item" data-dropdown-value="backbone">Monthly</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="c-dropdown js-dropdown">
+                                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                                        <span class="c-button c-button--dropdown js-dropdown__current">25</span>
+                                                        <ul class="c-dropdown__list">
+                                                            <li class="c-dropdown__item" data-dropdown-value="angular">25</li>
+                                                            <li class="c-dropdown__item" data-dropdown-value="backbone">50</li>
+                                                            <li class="c-dropdown__item" data-dropdown-value="ember">100</li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex justify-content-end">
+                                                    <button type="button" onclick="href='#us'" class="view-us btn m-3 py-1"><p class="name m-0">US</p></button>
+                                                    <button type="button" class="purchase btn m-3 py-1"><i class="export fas fa-plus"></i></button>
+                                                </div>
+                                                <img class="planregion region position-absolute"src="image\europe.svg" alt="plan">
+                                                <img class="planlogo position-absolute"src="image\planlogo.svg" alt="plan">
+                                            </div>
+
+<!-- us -->
+
+                                            <div class="plan position-relative flex-column justify-content-between mr-4" id="us">
+                                                <div class="info d-flex justify-content-between align-items-center m-3">
+                                                    <div class="c-dropdown js-dropdown">
+                                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                                        <span class="c-button c-button--dropdown js-dropdown__current">Subnet</span>
+                                                        <ul class="c-dropdown__list">
+                                                            <li class="c-dropdown__item" data-dropdown-value="angular">130.195.51</li>
+                                                            <li class="c-dropdown__item" data-dropdown-value="backbone">130.195.51</li>
+                                                            <li class="c-dropdown__item" data-dropdown-value="ember">130.57.567</li>
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="c-dropdown js-dropdown ml-auto mr-3">
+                                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                                        <span class="c-button c-button--dropdown js-dropdown__current">Daily</span>
+                                                        <ul class="c-dropdown__list">
+                                                            <li class="c-dropdown__item" data-dropdown-value="angular">Daily</li>
+                                                            <li class="c-dropdown__item" data-dropdown-value="backbone">Monthly</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="c-dropdown js-dropdown">
+                                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                                        <span class="c-button c-button--dropdown js-dropdown__current">25</span>
+                                                        <ul class="c-dropdown__list">
+                                                            <li class="c-dropdown__item" data-dropdown-value="angular">25</li>
+                                                            <li class="c-dropdown__item" data-dropdown-value="backbone">50</li>
+                                                            <li class="c-dropdown__item" data-dropdown-value="ember">100</li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex justify-content-end">
+                                                    <button type="button" onclick="href='#eu'" class="view-eu btn m-3 py-1"><p class="name m-0">EU</p></button>
+                                                    <button type="button" class="purchase btn m-3 py-1"><i class="export fas fa-plus"></i></button>
+                                                </div>
+                                                <img class="planregion-us region position-absolute"src="image\northamerica.svg" alt="plan">
+                                                <img class="planlogo position-absolute"src="image\planlogo.svg" alt="plan">
+                                            </div>
+
+
+                                            <textarea class="addip scrollbar-light-blue" id="paste-subnet" placeholder="View Ips here"></textarea>
+                                            <div class="addip" placeholder="Paste Ips here" id="remove-subnet">
+                                                <h4 class="name m-0">Confirm to<br>Remove this Plan</h4>
+                                                <div class="btn-group d-flex justify-content-between my-4">
+                                                    <button type="button" class="subnet-confirmation" id="cancel"><i class="fas fa-times"></i></button>
+                                                    <button type="button" class="subnet-confirmation" id="confirm"><i class="fas fa-check"></i></button>
+                                                </div>
+                                            </div>
+
+                            </div>
+
+                    </div>
+                </div>
+                <div class="calendarsection col-md-4 p-0 d-flex flex-column justify-content-center">
+
+                    <nav class="usersection navbar navbar-expand-lg navbar-light align-items-start mt-3">
+                        <a class="navbar-brand mr-5 ml-3 mt-2" href="#"><i class="logout fas fa-sign-out-alt"></i></a>
+
+                        <div class="userinfo ml-auto d-flex flex-row">
+                            <div class="user d-flex flex-column align-items-end justify-content-center">
+                                <p class="name m-0">Foxydraft</p>
+                                <p class="usertype m-0">admin</p>
+                            </div>
+                            <a class="navbar-brand ml-4 mr-3" href="#"><img class="profile logo" src="image\foxtasycraft.png" alt="profile"></a>
+                        </div>
+                    </nav>
+
+                    <div class="release d-flex flex-column flex-grow-1 py-4">
+                        <div class="search form-group mx-4 mb-4 d-flex justify-content-between align-items-center">
+                            <span class="fa fa-search form-control-feedback my-3 mx-4"></span>
+                            <input type="text" placeholder="Search"></input>
+
+                        </div>
+
+                        <div class="release-content tab-content d-flex flex-grow-1 scrollbar-light-blue">
+                            <div class="release-section">
+
+                                    <ul class="calendar-list list-unstyled">
+                                        <li class="row no-gutters py-3 m-0 mx-2 align-items-center">
+                                            <div class="thumbnail ml-3"><img class="item" src="https://i.pinimg.com/originals/9e/33/b5/9e33b5a5a18269d2a2c76a8eff6b1752.png" alt="items"></div>
+                                            <div class="col-6 col-md-6 ml-3"> <p class="productname">189459611215069186</p><p class="name m-0">5 Plans</p></div>
+                                            <div class="col-2 col-md-2 ml-auto mr-3"><div class="hype d-flex justify-content-center align-items-center"><i class="fire fas fa-user"></i></div></div>
+                                        </li>
+                                        <li class="row no-gutters py-3 m-0 mx-2 align-items-center">
+                                            <div class="thumbnail ml-3"><img class="item" src="https://s.pngkit.com/png/small/319-3195405_anime-girl-bending-over-anime-anime-girls-long.png" alt="items"></div>
+                                            <div class="col-6 col-md-6 ml-3"> <p class="productname">245187097403719691</p><p class="name m-0">0 Plan</p></div>
+                                            <div class="col-2 col-md-2 ml-auto mr-3"><div class="hype d-flex justify-content-center align-items-center"><i class="fire fas fa-user"></i></div></div>
+                                        </li>
+                                        <li class="row no-gutters py-3 m-0 mx-2 align-items-center">
+                                            <div class="thumbnail ml-3"><img class="item" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1251a8d5-c247-450d-aa22-e42c7f601476/dcu03e8-5e621ebb-bdd9-411c-baa1-205b1cd1caee.png/v1/fill/w_760,h_1052,strp/sexy_bikini_anime_girl__original__render_026_by_yamyumchann_dcu03e8-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xMDY4IiwicGF0aCI6IlwvZlwvMTI1MWE4ZDUtYzI0Ny00NTBkLWFhMjItZTQyYzdmNjAxNDc2XC9kY3UwM2U4LTVlNjIxZWJiLWJkZDktNDExYy1iYWExLTIwNWIxY2QxY2FlZS5wbmciLCJ3aWR0aCI6Ijw9NzcyIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.91c7VDsOmnqjaLB9kVyvb1q_iZQy09hQEmBXq40c93M" alt="items"></div>
+                                            <div class="col-6 col-md-6 ml-3"> <p class="productname">245187097403719691</p><p class="name m-0">100 Plans</p></div>
+                                            <div class="col-2 col-md-2 ml-auto mr-3"><div class="hype d-flex justify-content-center align-items-center"><i class="fire fas fa-user"></i></div></div>
+                                        </li>
+                                        <li class="row no-gutters py-3 m-0 mx-2 align-items-center">
+                                            <div class="thumbnail ml-3"><img class="item" src="https://i.pinimg.com/236x/5b/1f/8a/5b1f8a26fc32435cbfb1047dfb4346e3.jpg" alt="items"></div>
+                                            <div class="col-6 col-md-6 ml-3"> <p class="productname">504544017195728897</p><p class="name m-0">0 Plan</p></div>
+                                            <div class="col-2 col-md-2 ml-auto mr-3"><div class="hype d-flex justify-content-center align-items-center"><i class="fire fas fa-user"></i></div></div>
+                                        </li>
+                                        <li class="row no-gutters py-3 m-0 mx-2 align-items-center">
+                                            <div class="thumbnail ml-3"><img class="item" src="https://i.pinimg.com/236x/5b/1f/8a/5b1f8a26fc32435cbfb1047dfb4346e3.jpg" alt="items"></div>
+                                            <div class="col-6 col-md-6 ml-3"> <p class="productname">504544017195728897</p><p class="name m-0">0 Plan</p></div>
+                                            <div class="col-2 col-md-2 ml-auto mr-3"><div class="hype d-flex justify-content-center align-items-center"><i class="fire fas fa-user"></i></div></div>
+                                        </li>
+                                        <li class="row no-gutters py-3 m-0 mx-2 align-items-center">
+                                            <div class="thumbnail ml-3"><img class="item" src="https://i.pinimg.com/236x/5b/1f/8a/5b1f8a26fc32435cbfb1047dfb4346e3.jpg" alt="items"></div>
+                                            <div class="col-6 col-md-6 ml-3"> <p class="productname">504544017195728897</p><p class="name m-0">3 Plans</p></div>
+                                            <div class="col-2 col-md-2 ml-auto mr-3"><div class="hype d-flex justify-content-center align-items-center"><i class="fire fas fa-user"></i></div></div>
+                                        </li>
+                                        <li class="row no-gutters py-3 m-0 mx-2 align-items-center">
+                                            <div class="thumbnail ml-3"><img class="item" src="https://i.pinimg.com/236x/5b/1f/8a/5b1f8a26fc32435cbfb1047dfb4346e3.jpg" alt="items"></div>
+                                            <div class="col-6 col-md-6 ml-3"> <p class="productname">504544017195728897</p><p class="name m-0">0 Plan</p></div>
+                                            <div class="col-2 col-md-2 ml-auto mr-3"><div class="hype d-flex justify-content-center align-items-center"><i class="fire fas fa-user"></i></div></div>
+                                        </li>
+                                        <li class="row no-gutters py-3 m-0 mx-2 align-items-center">
+                                            <div class="thumbnail ml-3"><img class="item" src="https://i.pinimg.com/236x/5b/1f/8a/5b1f8a26fc32435cbfb1047dfb4346e3.jpg" alt="items"></div>
+                                            <div class="col-6 col-md-6 ml-3"> <p class="productname">504544017195728897</p><p class="name m-0">0 Plan</p></div>
+                                            <div class="col-2 col-md-2 ml-auto mr-3"><div class="hype d-flex justify-content-center align-items-center"><i class="fire fas fa-user"></i></div></div>
+                                        </li>
+                                    </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+        </div>
+    </main>
+    <script>
+        var options = {
+          series: [55],
+          chart: {
+          height: 250,
+          type: 'radialBar',
+          toolbar: {
+            show: false
+          }
+        },
+        responsive: [
+        {
+            breakpoint: 1500,
+            options: {
+                chart: {
+                height: 220,
+                }
+            },
+        }
+        ],
+
+        plotOptions: {
+          radialBar: {
+            startAngle: -135,
+            endAngle: 225,
+             hollow: {
+              margin: 0,
+              size: '70%',
+              background: '#47567D',
+              image: undefined,
+              imageOffsetX: 0,
+              imageOffsetY: 0,
+              position: 'front',
+              dropShadow: {
+                enabled: true,
+                top: 3,
+                left: 0,
+                blur: 16,
+                opacity: 0.14
+              }
+            },
+
+            track: {
+              background: '#29354B',
+              strokeWidth: '67%',
+              margin: 2, // margin is in pixels
+              dropShadow: {
+                enabled: true,
+                top: -3,
+                left: 0,
+                blur: 16,
+                opacity: 0.15
+              }
+            },
+
+            dataLabels: {
+              show: true,
+              name: {
+                offsetY: -10,
+                show: true,
+                color: '#97A4C6',
+                fontSize: '15px'
+              },
+
+              value: {
+                formatter: function(val) {
+                  return parseInt(val);
+                },
+                color: '#BDCBFF',
+                fontSize: '30px',
+                show: true,
+              }
+            }
+          }
+        },
+
+        fill: {
+          type: 'gradient',
+          gradient: {
+            shade: 'dark',
+            type: 'horizontal',
+            shadeIntensity: 0.5,
+            gradientToColors: ['#7AF3A6'],
+            inverseColors: true,
+            opacityFrom: 1,
+            opacityTo: 1,
+            stops: [0, 100]
+          }
+        },
+
+        stroke: {
+          lineCap: 'round'
+        },
+
+        labels: ['Days Left'],
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+    </script>
+
+    <script>
+        $(document).ready(function() {
+
+            $('#us').hide();
+            $(".view-us").on('click', function() {
+                $('#eu').hide();
+                $('#us').fadeIn("slow");
+                $('#us').css('display',"flex");
+            });
+
+            $(".view-eu").on('click', function() {
+                $('#us').hide();
+                $('#eu').fadeIn("slow");
+            });
+
+            $('#remove-subnet').hide();
+            $(".delete").on('click', function() {
+                $('#paste-subnet').hide();
+                $('#paste-subnet').css('display',"none");
+                $('#remove-subnet').fadeIn("slow");
+                $('#remove-subnet').css('display',"flex");
+            });
+
+            $('#cancel').on('click', function() {
+                $('#remove-subnet').hide();
+                $('#paste-subnet').fadeIn("slow");
+                 $('#paste-subnet').css('display',"flex");
+            });
+
+            $( ".hype" ).on('click',function() {
+                $( this ).closest("li").addClass('selected');
+                $( this ).closest("li").siblings(".selected").removeClass('selected');
+            });
+
+            $( ".view" ).on('click',function() {
+                $( this ).closest("li").css('background-color','#47567D');
+                $( this ).closest("li").siblings().css('background-color','#364360');
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>

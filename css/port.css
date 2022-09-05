@@ -1,0 +1,144 @@
+/* viewport */
+
+@media screen and (min-width: 1600px) and (max-width: 1899px) {
+    .section {
+        margin: 3.5rem 7rem 3.5rem 7rem;
+    }
+
+    .calendar {
+        padding: 1rem;
+        height: 17rem;
+    }
+
+    .ip {
+        height: 29rem;
+    }
+
+    .counter {
+        width: 22rem;
+    }
+
+    .counter .amount {
+        min-height: 12rem;
+    }
+
+    .time {
+        margin-top: 1.5rem;
+    }
+
+    .planlogo {
+        width: 6rem;
+    }
+
+    .editsubnet {
+        width: 50rem;
+    }
+
+    .ipinfo {
+        height: 31rem;
+    }
+
+    .region {
+        width: 12rem;
+    }
+
+    .login {
+        margin: 8.5rem 12rem 8.5rem 12rem;
+    }
+
+    .planregion-us {
+        width: 10rem;
+    }
+
+}
+
+@media screen and (min-width: 1900px) and (max-width: 2000px) {
+    .section {
+        margin: 3.5rem 9rem 3.5rem 9rem;
+    }
+
+    .calendar {
+        padding: 1rem;
+        height: 17rem;
+    }
+
+    .ip {
+        height: 29rem;
+    }
+
+    .counter {
+        width: 22rem;
+    }
+
+    .counter .amount {
+        min-height: 12rem;
+    }
+
+    .time {
+        margin-top: 1.5rem;
+    }
+
+    .planlogo {
+        width: 6rem;
+    }
+
+    .editsubnet {
+        width: 59rem;
+    }
+
+    .ipinfo {
+        height: 31rem;
+    }
+
+    .region {
+        width: 13rem;
+    }
+
+    .planregion-us {
+        width: 10rem;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .section {
+        margin: 10rem 20rem;
+    }
+
+    .calendar {
+        padding: 2rem;
+        height: 20rem;
+    }
+
+    .ip {
+        height: 35rem;
+    }
+
+    .counter {
+        width: 30.5rem;
+    }
+
+    .counter .amount {
+        min-height: 12rem;
+    }
+
+    .time {
+        margin-top: 1.5rem;
+    }
+
+    .planlogo {
+        width: 7rem;
+    }
+
+    .editsubnet {
+        width: 69.5rem;
+    }
+
+    .ipinfo {
+        height: 35rem;
+    }
+
+    .region {
+        width: 15rem;
+    }
+
+}
